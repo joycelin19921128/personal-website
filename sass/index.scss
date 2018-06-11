@@ -120,6 +120,20 @@ $line-height-m:30px;
         @content;      
     }
 }
+@mixin circle($WH){
+    div{
+        width:$WH;
+        height: $WH;
+        margin: 0 auto;
+        margin-top: 10px ;
+        margin-bottom:10px;
+    }
+    img{
+        width:$WH;
+        height: $WH;
+        border-radius: 100%;
+    }
+}
 @import 'reset';
 .clearfix::after {
     content: "";
@@ -140,7 +154,7 @@ h3{
 }
 hr{
     width:0;
-    height:100px;
+    height:50px;
     margin-top: 20px;
     margin-bottom: 20px;
     border: $second-color 1px solid;
@@ -234,7 +248,7 @@ hr{
     margin: 0 auto;    
     margin-top: 72px;
     height:600px;
-    @include bgimg(url(../assets/img/4.jpg));
+    @include bgimg(url(../assets/img/bannerL.jpg));
     .title{
     margin: 250px 0px 0 475px;
     font-size: 50px;
@@ -253,7 +267,8 @@ hr{
 @include others(){
     #banner{
      max-width:375px; 
-     height: 400px; 
+     height: 400px;
+     @include bgimg(url(../assets/img/bannerS.jpg));
      .title{
         margin: 100px 0px 0 160px;
            }
@@ -265,7 +280,8 @@ hr{
 @include iphone5(){
     #banner{
      max-width:320px; 
-     height: 400px;   
+     height: 400px; 
+     @include bgimg(url(../assets/img/bannerS.jpg));  
      .title{
         margin: 80px 0px 0 120px;
        }
@@ -446,21 +462,22 @@ hr{
 //works end
 //contact start
 #contact{
-    padding:80px 0 200px 0;
+    padding:80px 0 20px 0;
     color:$text-color; 
-    @include bgimg(url(../assets/img/3.jpg));
+    @include bgimg(url(../assets/img/beachL.jpg));
     h2{ 
         margin-bottom: 20px; 
     }
 }
 .contact-inner{
-    max-width:500px;
+    max-width:700px;
     padding: 10px 100px;
     margin: 0 auto;
     border: 2px $second-color solid;
     @include text-align(center);
     line-height: $line-height-s;
-    @include bg-color(0.8);
+    @include bg-color(0.5);
+    @include circle(200px);
     p{
         margin-bottom: 15px;
     }
@@ -476,12 +493,18 @@ hr{
     }
 }
 @include others(){
+    #contact{    
+        @include bgimg(url(../assets/img/beachS.jpg));
+    }
     .contact-inner{
      max-width:300px; 
      padding: 30px 20px;
     }       
 }
 @include iphone5(){
+    #contact{    
+        @include bgimg(url(../assets/img/beachS.jpg));
+    }
     .contact-inner{
     max-width:320px; 
     padding:20px 10px;

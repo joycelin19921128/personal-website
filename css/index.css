@@ -78,7 +78,7 @@ h3 {
 
 hr {
   width: 0;
-  height: 100px;
+  height: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
   border: #FF9933 1px solid; }
@@ -230,7 +230,7 @@ hr {
   margin: 0 auto;
   margin-top: 72px;
   height: 600px;
-  background-image: url(../assets/img/4.jpg);
+  background-image: url(../assets/img/bannerL.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -250,7 +250,12 @@ hr {
 @media (max-width: 767px) and (min-width: 375px) {
   #banner {
     max-width: 375px;
-    height: 400px; }
+    height: 400px;
+    background-image: url(../assets/img/bannerS.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
     #banner .title {
       margin: 100px 0px 0 160px; }
     #banner .position {
@@ -259,7 +264,12 @@ hr {
 @media (max-width: 320px) {
   #banner {
     max-width: 320px;
-    height: 400px; }
+    height: 400px;
+    background-image: url(../assets/img/bannerS.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
     #banner .title {
       margin: 80px 0px 0 120px; }
     #banner .position {
@@ -437,9 +447,9 @@ hr {
     padding: 30px 0 0 0; } }
 
 #contact {
-  padding: 80px 0 200px 0;
+  padding: 80px 0 20px 0;
   color: #333333;
-  background-image: url(../assets/img/3.jpg);
+  background-image: url(../assets/img/beachL.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -448,13 +458,23 @@ hr {
     margin-bottom: 20px; }
 
 .contact-inner {
-  max-width: 500px;
+  max-width: 700px;
   padding: 10px 100px;
   margin: 0 auto;
   border: 2px #FF9933 solid;
   text-align: center;
   line-height: 25px;
-  background-color: rgba(209, 211, 209, 0.8); }
+  background-color: rgba(209, 211, 209, 0.5); }
+  .contact-inner div {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .contact-inner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; }
   .contact-inner p {
     margin-bottom: 15px; }
   .contact-inner a {
@@ -466,11 +486,23 @@ hr {
     font-weight: bold; }
 
 @media (max-width: 767px) and (min-width: 375px) {
+  #contact {
+    background-image: url(../assets/img/beachS.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
   .contact-inner {
     max-width: 300px;
     padding: 30px 20px; } }
 
 @media (max-width: 320px) {
+  #contact {
+    background-image: url(../assets/img/beachS.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
   .contact-inner {
     max-width: 320px;
     padding: 20px 10px;
