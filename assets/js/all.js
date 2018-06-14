@@ -1,4 +1,9 @@
 $(document).ready(function () {
+      //banner 隨著視窗高度作滿版調整
+      document.querySelector('#banner').style.height = window.innerHeight="px"
+      window.onresize = function(){
+          document.querySelector('#banner').style.height = window.innerHeight="px"
+      }
 
     //漢堡選單
     $('.shownav').on('click', function (e) {
@@ -63,4 +68,5 @@ $(document).ready(function () {
             }
         });
     });
+  
 });
